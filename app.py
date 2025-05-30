@@ -826,7 +826,7 @@ def main():
                 api_key=azure_config['api_key'],
                 endpoint=azure_config['endpoint'],
                 api_version=azure_config['api_version'],
-                model=model_choice
+                model=azure_config['model']
             )
         except Exception as e:
             st.error(f"Failed to initialize Azure OpenAI client: {str(e)}")
