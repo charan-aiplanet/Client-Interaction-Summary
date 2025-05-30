@@ -495,7 +495,7 @@ def load_azure_config():
                 'api_key': st.secrets['AZURE_OPENAI_API_KEY'],
                 'endpoint': st.secrets['AZURE_OPENAI_ENDPOINT'],
                 'api_version': st.secrets.get('AZURE_OPENAI_API_VERSION', '2024-02-15-preview'),
-                'model': st.secrets.get('AZURE_OPENAI_MODEL', 'gpt-4')
+                'model': st.secrets.get('AZURE_OPENAI_MODEL', 'aiplatform')
             }
         except KeyError:
             config = {}
