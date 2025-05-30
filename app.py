@@ -505,7 +505,7 @@ def load_azure_config():
 def authenticate_user(username: str, password: str) -> bool:
     """Simple authentication function"""
     # Simple hash-based authentication (in production, use proper authentication)
-    expected_hash = hashlib.sha256("admin:password123".encode()).hexdigest()
+    expected_hash = hashlib.sha256("aiplanet:aiplanet000".encode()).hexdigest()
     user_hash = hashlib.sha256(f"{username}:{password}".encode()).hexdigest()
     return user_hash == expected_hash
 
@@ -513,7 +513,7 @@ def show_login_screen():
     """Display login screen"""
     st.markdown("""
     <div class="login-container">
-        <div class="login-header">🔐 Login</div>
+        <div class="login-header">🔐 Login to Client Interaction Summary Agent</div>
         <p>Please enter your credentials to access the Client Interaction Summary Generator</p>
     </div>
     """, unsafe_allow_html=True)
@@ -534,7 +534,7 @@ def show_login_screen():
                     st.error("❌ Invalid credentials. Please try again.")
     
     # Add demo credentials info
-    st.info("📝 Demo credentials: Username: admin, Password: password123")
+    
 
 def display_agent_status(agent_statuses: Dict[str, AgentStatus]):
     """Display current status of all agents"""
