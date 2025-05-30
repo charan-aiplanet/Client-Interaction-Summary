@@ -19,17 +19,3 @@ reportlab>=4.0.0
 
 # Environment management
 python-dotenv>=1.0.0
-
-# Standard library utilities (usually included with Python)
-# These are typically built-in but listing for completeness
-uuid
-hashlib
-datetime
-io
-os
-threading
-asyncio
-dataclasses
-typing
-time
-json
