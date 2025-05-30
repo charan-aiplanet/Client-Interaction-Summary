@@ -9,6 +9,7 @@ openai>=1.0.0
 
 # AutoGen for multi-agent system
 autogen-agentchat>=0.2.0
+autogen
 
 # Document processing
 PyPDF2>=3.0.0
